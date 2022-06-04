@@ -1,6 +1,6 @@
 /*TODO: clean it all up, finish flex, add aesthetics, icons, redefine to be relative to vh-vw, maybe rework v2 variant using scss and frames and real transitions? */
 html body {
-	background-image: url('bg.jpg');
+	background-color: black;
 	margin: 0 0 0 0;
 }
 .infocardContainer * {
@@ -10,9 +10,6 @@ html body {
 h2 {
 	font-weight: 600;
 	font-style: italic;
-	color: aliceblue;
-	text-align: center;
-	padding: 0.2rem;
 	font-family: 'Fira Sans Condensed', sans-serif;
 }
 header {
@@ -35,8 +32,7 @@ a:hover {
 	text-decoration: underline;
 }
 .infocardContainer {
-	display: grid;
-
+	display: flex;
 	height: 200px;
 	width: 200px;
 	border-radius: 100px;
@@ -44,7 +40,7 @@ a:hover {
 	background: linear-gradient(
 		121deg,
 		rgba(255, 255, 255, 0) 13%,
-		rgba(63, 114, 155, 0.55) 100%
+		rgba(0, 159, 255, 1) 100%
 	);
 	transition: all 500ms ease-in;
 	transition-delay: 1s;
@@ -126,4 +122,7 @@ a:hover {
 	max-width: 30px;
 	--margin: 0 1px 0 1px;
 	border-radius: 25px;
+}
+/*TODO: animate copy main transition style for info*/
+.infocardContainer #textbois #hotlinks *:hover {
 }
